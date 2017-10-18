@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Doc Apt</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Schedule Your Doctor Appointment Here:</h1>
+      <form id="patientInfo">
+        <div class="name">
+            <label for="patientName">First and Last Name</label>
+            <input id="patientName" class="form-control" type="text">
+
+        </div>
+
+        <div class="purpose">
+            <label for="patientPurpose">Reason for your visit</label>
+            <input id="patientPurpose" class="form-control" type="text">
+
+        </div>
+
+        <div class="date">
+            <label for="patientDate">Date requested</label>
+            <input id="patientDate" class="form-control" type="text">
+
+        </div>
+
+        <div class="time">
+            <label for="patientTime">Time requested</label>
+            <input id="patientTime" class="form-control" type="text">
+
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div id="confirmation">
+        <h1>Your Appointment is Set!</h1>
+        <p>
+          Hello <span class="name"></span>, than you for making an appointment for <span class="date"></span> at <span class="time"></span>. During your appointment we will be going over <span class="purpose"></span>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
